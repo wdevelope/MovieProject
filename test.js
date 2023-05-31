@@ -22,7 +22,6 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1', opti
         // 영화 목록을 카드 형태로 표시
         renderMovieCards(moviesData);
     })
-    .catch(err => console.error(err));
 
 // 영화 카드 생성 및 화면에 표시
 function renderMovieCards(movies) {
